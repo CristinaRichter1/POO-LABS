@@ -1,6 +1,6 @@
 [Back to home](https://github.com/kenyz0r/Seminarii1035)
 
-# Cum sa creezi un proiect in Visual Studio
+# Cum sa creezi un proiect in Visual Studio?
 
 # Pasul 1: Crearea proiectului
 1. Navigheaza in meniul `File`;
