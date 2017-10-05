@@ -11,7 +11,7 @@
 1. In fereastra de configurare se alege din tab-ul `Installed`, limbajul tinta: `Visual C++`;
 2. Se alege tipul proiectului: `Win32 Console Application` si se apasa butonul `OK`;
 
-![alt tag](./step2.png)
+![alt tag](./step2.PNG)
 
 # Pasul 3: Setup-ul proiectului
 1. La aparitia ferestrei de configurare se trece peste `Overview` prin apasarea butonului `Next >`;
@@ -20,7 +20,7 @@
 
 ### NOTE: ESTE FOARTE IMPORTANT SA SE EXECUTE A DOUA INSTRUCTIUNE
 
-![alt tag](./step3.png)
+![alt tag](./step3.PNG)
 
 # Pasul 4: Adaugarea fisierelor in proiect
 
@@ -35,5 +35,5 @@
 1. Fiti siguri ca in meniul din stanga limbajul selectat este `Visual C++`;
 2. In subcategoria `Code` se selecteaza optiunea `C++ File (.cpp)`, dupa care se apasa butonul `Add`;
 
-![alt tag](./step5.png)
+![alt tag](./step5.PNG)
 
