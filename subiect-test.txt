@@ -1,0 +1,53 @@
+Test POO – Subiect 26
+Nume si prenume: __________________________ Grupa: __________ Puncte estimate: ____________
+Să se implementeze clasa Autocar în vederea gestiunii autocarelor din cadrul unei firme de transport persoane,
+cu următoarele atribute
+(model – șir de caractere alocat dinamic,
+nrCurse – variabilă de tipul int reprezentând numărul de curse pe care le-a efectuat autocarul,
+evidentaBilete - vector cu dimensiune variabilă,
+alocat dinamic, cu numere întregi ce reprezintă numărul de bilete vandute la fiecare calatorie,
+id – valoare constantă de tip int, 
+nrAutocare – variabila statica ce contorizează numărul de autocare la un moment dat – de aceea, atunci cand un obiect este creat,
+numărul de autocare crește,  iar la distrugerea unui obiect, numarul de autocare scade) și să se dezvolte aplicația C++ care conține următoarele instrucțiuni din main(): 
+
+
+1p
+Definire clasa și atribute conform cerințelor
+1p
+Implementare destructor pentru a evita generarea de memory leaks
+1p
+void main() {
+Autocar a1; // nu exista cosntructor fara parametri
+Autocar v2(1); // creaza un autocar cu id-ul 1
+cout<<a2.getNrCurse(); //afiseaza 0, deoarece are 0 curse la inceput
+1p
+int evBilete[] = {50, 70, 80};
+Autocar a3(2, “Setra”, 3, evBilete);
+Autocar v4 = v3;
+cout<<a4.getModel(); // afișează “Setra”
+1p
+cout<<a4; // afiseaza Autocarul cu ID:2  Model: Setra a efectuat: 3 curse avand cu 50, 70, 80 bilete vandute
+int evBilete1[] = {30, 40}
+int curse = 2;
+a2.setModel(“Mercedes”); 
+a2.setNrCurse(curse); 
+a2.setEvidentaBilete(evBilete1, 2);
+1p
+a3 = a2;
+cout << a3.getMedieBileteVandute(); // afiseaza media biletelor vandute
+1p
+int evBilete2[] = {50, 60, 80}
+Autocar* aPtr = new Autocar(3, “Volvo”, 3, evBilete2);
+int diferentaCalatorii = a2  - *aPtr; // afiseaza 1
+1p
+// dezaloca spatiu pentru *aPtr - implementati apelul pentru stergere
+cout<<Autocar::nrVapoare; //afiseaza numarul de obiecte de tip autocar 
+1p
+a4[1] = 190; // modifica numarul de bilete de la pozitia 1 din vectorul de evidenta a biletelor vandute
+cout << a4[1]; // afiseaza numarul de bilete vandute in a doua calatorie
+1p
+if(a2==a3){
+   cout<<”Autocarele au acelasi model”;
+} else {
+   cout<<”Autocarele au  modele diferite”; }
+Nota: Doar solutiile care nu contin erori de compilare vor fi evaluate
