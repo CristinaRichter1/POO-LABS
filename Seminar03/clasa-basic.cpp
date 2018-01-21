@@ -12,7 +12,7 @@ public:
 	Student(int v, char* n);
 	Student(Student &ref);
 	~Student();
-	void operator=(Student &ref);
+	Student& operator=(Student &ref);
 
 	int getVarsta();
 	void setVarsta(int v);
@@ -54,7 +54,7 @@ Student::~Student() {
 		delete[] this->nume;
 	this->nume = 0;
 }
-void Student::operator=(Student &copie) {
+Student& Student::operator=(Student &copie) {
 	this->varsta = copie.getVarsta();
 	if (this->nume != NULL) {
 		delete[] this->nume;
@@ -66,6 +66,7 @@ void Student::operator=(Student &copie) {
 	else {
 		this->nume = 0;
 	}
+	return *this;
 }
 
 int Student::getVarsta() {
@@ -96,7 +97,7 @@ void main() {
 	Student s4(s2); // apel explicit constructor copiere
 	Student s5;
 	
-	s1 = s3; // suprascriere operator =  (constructor de copiere)
+	s1 = s3; // suprascriere operator = 
 	
 	
 	s5.setVarsta(15);

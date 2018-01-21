@@ -13,7 +13,7 @@ public:
 	Hotel(char* n, char* a, int nr);
 	Hotel(Hotel &copie);
 	~Hotel();
-	void operator=(Hotel &copie);
+	Hotel& operator=(Hotel &copie);
 
 	void setNume(char* n);
 	void setAdresa(char* a);
@@ -63,7 +63,7 @@ Hotel::~Hotel() {
 		delete[] this->adresa;
 }
 
-void Hotel::operator=(Hotel &copie) {
+Hotel& Hotel::operator=(Hotel &copie) {
 	if (copie.getNume() != NULL) {
 		this->nume = new char[strlen(copie.getNume()) + 1];
 		strcpy(this->nume, copie.getNume());
@@ -73,6 +73,7 @@ void Hotel::operator=(Hotel &copie) {
 		strcpy(this->adresa, copie.getAdresa());
 	}
 	this->nrCamere = copie.getNrCamere();
+	return *this;
 }
 
 void Hotel::setNume(char* n) {
